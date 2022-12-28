@@ -1,0 +1,75 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+/*Mainpage*/
+h1 {
+	position: absolute;
+	width: 690px;
+	height: 65px;
+	left: 25%;
+	top: 140px;
+
+	font-family: 'Inter';
+	font-style: bold;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	text-align: center;
+
+	color: #6EB1C7;
+
+}
+
+#design {
+	color: #DA7DBB;
+	font-weight: 600;
+}
+
+#tech {
+	color: #DCB04F;
+	font-weight: 600;
+}
+
+#data {
+	color: #7B9F78;
+	font-weight: 600;
+}
+
+
+h2 {
+	position: absolute;
+	width: 1180px;
+	height: 350px;
+	left: 8%;
+	top: 280px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 39px;
+	text-align: center;
+
+	color: #415058;
+}
+
+.coloredbox {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	left: 2%;
+	top: 80vh;
+	margin-left: 2%;
+	display: inline-block;
+	border-radius: 45px;
+}
+
+.boxlogo {
+	position: relative;
+	width: 289px;
+	height: 298px;
+}
+
+
