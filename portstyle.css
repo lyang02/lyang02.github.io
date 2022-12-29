@@ -67,7 +67,8 @@ h2 {
 }
 
 .boxlogo {
-	position: relative;
+	position: absolute;
+	text-align: center;
 	width: 289px;
 	height: 298px;
 }
