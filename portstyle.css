@@ -4,14 +4,35 @@
 :root { font-family: 'Inter var', sans-serif; }
 }
 
-/*Mainpage*/
+#connectlinks {
+	margin-top: 3vh;
+
+	display: flex;
+	text-align: center;
+	justify-content: right;
+	width:100%;
+
+	font-family: 'Inter';
+	font-style: bold;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 3em;
+
+}
+
+#connectlinks a {
+	color: #283136;
+	text-decoration: none;
+}
+
+
 .flex-container0 {
-	margin-top: 15vh;
+	margin-top: 10vh;
 	display: inline-flex;
-  	align-items: center;
-  	justify-content: center;
-  	text-align:center;
-  	width:100%;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  width:100%;
 
 }
 
@@ -36,8 +57,8 @@ h1 {
 	font-family: 'Inter';
 	font-style: bold;
 	font-weight: 700;
-	font-size: 56px;
-	line-height: 48px;
+	font-size: 60px;
+	line-height: 3em;
 
 	color: #6EB1C7;
 	transition: 1s;
@@ -46,9 +67,9 @@ h1 {
 
 .title:hover {
 	animation-duration: 5s;
-  	animation-name: colorchange;
-  	animation-iteration-count: infinite;
-  	transition: 1s;
+  animation-name: colorchange;
+  animation-iteration-count: infinite;
+  transition: 1s;
 }
 
 @keyframes colorchange {
@@ -96,7 +117,6 @@ h1 {
 
 
 h2 {
-	position: relative;
 	width: 40em;
 	height: 5em;
 	margin-top: 1em;
@@ -104,18 +124,18 @@ h2 {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 39px;
 	text-align: center;
 
-	color: #415058;
+	color: #283136;
 	transition: 0.1s;
 }
 
 .flex-container1 {
 	display: flex;
-  	justify-content: space-around;
-  	align-items: center;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
@@ -140,7 +160,68 @@ h2 {
 
 
 .flex-container2 {
+	margin-top: 8vh;
 	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  	
+}
+
+.projects {
+	width: 80vw;
+	height: 80vh;
+	margin: 3em;
+	
+	display: flex;
+	align-items: center;
+	border-radius: 45px;
+
+	transition:0.5s;
+}
+
+.projects:hover {
+	width: 85vw;
+	height: 85vh;
+	transition:0.2s;
+}
+
+h3 {
+	font-family: 'Inter';
+	font-style: bold;
+	font-weight: 700;
+	font-size: 45px;
+
+	line-height: 1.5em;
+	width: 8em;
+
+	color: #3B3B3C;
+}
+
+.descript {
 
 }
 
+.skills {
+
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+
+	width: 50em;
+	height: 8em;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 2em;
+	text-align: center;
+
+	color: #283136;
+
+}
