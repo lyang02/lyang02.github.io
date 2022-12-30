@@ -1,25 +1,82 @@
+
 :root { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
+:root { font-family: 'Inter var', sans-serif; }
 }
 
 /*Mainpage*/
-h1 {
-	position: absolute;
-	width: 690px;
-	height: 65px;
-	left: 25%;
-	top: 140px;
+.flex-container0 {
+	margin-top: 15vh;
+	display: inline-flex;
+  	align-items: center;
+  	justify-content: center;
+  	text-align:center;
+  	width:100%;
 
+}
+
+.wave {
+	width: 2em;
+	font-size: 56px;
+	line-height: 3em;
+
+	transform: rotate(5deg);
+	transition: 0.5s;
+
+}
+
+.wave:hover {
+	transition: 0.5s;
+	transform: rotate(50deg);
+}
+
+h1 {
+	width: 12em;
+	
 	font-family: 'Inter';
 	font-style: bold;
 	font-weight: 700;
-	font-size: 48px;
-	line-height: 58px;
-	text-align: center;
+	font-size: 56px;
+	line-height: 48px;
 
 	color: #6EB1C7;
+	transition: 1s;
 
+}
+
+.title:hover {
+	animation-duration: 5s;
+  	animation-name: colorchange;
+  	animation-iteration-count: infinite;
+  	transition: 1s;
+}
+
+@keyframes colorchange {
+  from {
+    color: #6EB1C7;
+  }
+
+  25% {
+    color: #DCB04F;
+  }
+
+  50% {
+    color: #DA7DBB;
+  }
+
+  75% {
+    color: #8BB8E8;
+  }
+	
+  to {
+  	color: #6EB1C7;
+  }
+}
+
+.keywords:hover {
+	line-height: 39px;
+	font-size: 32px;
+	transition: 0.2s;
 }
 
 #design {
@@ -39,11 +96,10 @@ h1 {
 
 
 h2 {
-	position: absolute;
-	width: 1180px;
-	height: 350px;
-	left: 8%;
-	top: 280px;
+	position: relative;
+	width: 40em;
+	height: 5em;
+	margin-top: 1em;
 
 	font-family: 'Inter';
 	font-style: normal;
@@ -53,24 +109,38 @@ h2 {
 	text-align: center;
 
 	color: #415058;
+	transition: 0.1s;
+}
+
+.flex-container1 {
+	display: flex;
+  	justify-content: space-around;
+  	align-items: center;
+
 }
 
 .coloredbox {
 	position: relative;
+	width: 280px;
+	height: 280px;
+	
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+
+	border-radius: 45px;
+	transition:0.5s;
+}
+
+.coloredbox:hover {
 	width: 300px;
 	height: 300px;
-	left: 2%;
-	top: 80vh;
-	margin-left: 2%;
-	display: inline-block;
-	border-radius: 45px;
+	transition:0.2s;
 }
 
-.boxlogo {
-	position: absolute;
-	text-align: center;
-	width: 289px;
-	height: 298px;
-}
 
+.flex-container2 {
+	display: flex;
+
+}
 
