@@ -60,16 +60,14 @@ h1 {
 	line-height: 3em;
 
 	color: #6EB1C7;
-	transition: 1s;
 
-}
-
-.title:hover {
 	animation-duration: 5s;
   animation-name: colorchange;
   animation-iteration-count: infinite;
-  transition: 1s;
+  transition: 2s;
+
 }
+
 
 @keyframes colorchange {
   from {
@@ -120,9 +118,10 @@ h2 {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
+	font-size: 24px;
 	line-height: 39px;
 	text-align: center;
+	width: 70vw;
 
 	color: #283136;
 	transition: 0.1s;
@@ -132,6 +131,7 @@ h2 {
 	display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 
 }
 
@@ -156,35 +156,37 @@ h2 {
 
 
 .flex-container2 {
-	margin-top: 8vh;
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
   	
 }
 
 .projects {
-	width: 85vw;
+	width: 85%;
 	height: 85vh;
-	margin: 3em;
+	margin: 8vh;
 	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 45px;
-
 	transition:0.5s;
+
+	flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
 }
 
 h3 {
 	font-family: 'Inter';
 	font-style: bold;
 	font-weight: 700;
-	font-size: 45px;
+	font-size: 3em;
 
 	line-height: 1.4em;
-	width: 8em;
 
 	color: #3B3B3C;
 }
@@ -192,16 +194,16 @@ h3 {
 .descript {
 	flex: 1;
 	align-items: center;
+	object-fit: contain;
 
 }
 
 .text {
 	font-family: 'Inter';
 	font-weight: 500;
-	font-size: 1.2em;
+	font-size: clamp(0.9em, 3vw, 1.3em);
 
 	line-height: 1.5em;
-	width:26.5vw;
 	margin-top: 7vh;
 	text-align:left;
 
@@ -209,10 +211,16 @@ h3 {
 }
 
 .display {
-	flex: 1.5;
+	flex: 1;
 	align-items: center;
+	justify-items: center;
 	justify-content: center;
 	text-align: center;
+	padding: 8vh 4vw 8vh 4vw;
+	border-radius: 50px;
+	width: 55%;
+	margin-left: 8.5vw;
+	min-width: 40vw;
 
 }
 
